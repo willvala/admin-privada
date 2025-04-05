@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Privada</title>
+    <script>
+        // ¡Reemplaza esto con tu URL real!
+        const API_URL = 'https://script.google.com/macros/s/AKfycbxP-lNlrSromgFC4aqz8uPBQPRENRW4C4b_3CSfnNbIWfX5QAzWePB_9hvKPLQhPL9u/exec';
+    </script>
+    <style>
+        /* Estilos básicos */
+        body { font-family: Arial, sans-serif; }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Administración</h1>
+    <div id="app"></div>
+    
+    <script>
+        // Tu JavaScript aquí
+        fetch(`${API_URL}?action=getPropiedades`)
+            .then(response => response.json())
+            .then(data => console.log(data));
+    </script>
+</body>
+</html>
