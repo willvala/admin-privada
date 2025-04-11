@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Privada Residencial</title>
+    
+    <!-- Conexión con tu API (REEMPLAZA ESTO) -->
+    <script>
+        const API_URL = 'https://script.google.com/macros/s/AKfycbxP-lNlrSromgFC4aqz8uPBQPRENRW4C4b_3CSfnNbIWfX5QAzWePB_9hvKPLQhPL9u/exec';
+    </script>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Administración de la Privada</h1>
+        <nav>
+            <button class="tab-btn active" data-tab="propiedades">Propiedades</button>
+            <button class="tab-btn" data-tab="pagos">Pagos</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="propiedades" class="tab-content active">
+            <!-- Contenido dinámico se cargará aquí -->
+        </div>
+        
+        <div id="pagos" class="tab-content">
+            <!-- Contenido dinámico se cargará aquí -->
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
